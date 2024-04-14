@@ -11,10 +11,6 @@ public class encrypt
         System.out.println("Enter a message to encrypt: ");
         String message = sc.nextLine();
 
-        // key matrix
-        int [][] key = {{1,0,0},{0,1,0},{0,0,1}};
-
-
         //encrypts message
         System.out.println("Encrypting...");
         String encryptedMessage = hillEncrypt(message);
@@ -117,7 +113,7 @@ public class encrypt
         String encrypted="";
         for(int i=0;i<3;i++)
         {
-            encrypted = encrypted.concat(Character.toString((char)encryptedString[i]));
+            encrypted = encrypted.concat((encryptedString[i])+" ");
         }
 
         return encrypted;
