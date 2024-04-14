@@ -25,7 +25,7 @@ public class encrypt
     public static String hillEncrypt(String input)
     {
         // character to add in case the stirng without spaces is not a perfect multiple of 3
-        final String nullChar = "x"; // option-shift-\
+        final String nullChar = "x"; 
 
         //remove spaces
         input = removeSpaces(input);
