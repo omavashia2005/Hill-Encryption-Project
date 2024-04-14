@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class encrypt
@@ -30,7 +29,7 @@ public class encrypt
     public static String hillEncrypt(String input)
     {
         // character to add in case the stirng without spaces is not a perfect multiple of 3
-        final String nullChar = "x"; // option-shift-\
+        final String nullChar = "x"; 
 
         //remove spaces
         input = removeSpaces(input);
@@ -62,8 +61,6 @@ public class encrypt
         {
             encrypted = encrypted.concat(matrixEncrypt((input.substring(i,i+3))));
         }
-
-        encrypted = shiftEncrypt(encrypted);
 
         return encrypted;
     }
@@ -149,11 +146,5 @@ public class encrypt
 
         //returns the no spaces string
         return modifiedMessage;
-    }
-
-    //return caesar shifted string
-    public static String shiftEncrypt(String hillEncrypted)
-    {
-        return hillEncrypted;
     }
 }
