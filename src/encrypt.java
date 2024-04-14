@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class encrypt
@@ -62,8 +61,6 @@ public class encrypt
         {
             encrypted = encrypted.concat(matrixEncrypt((input.substring(i,i+3))));
         }
-
-        encrypted = shiftEncrypt(encrypted);
 
         return encrypted;
     }
@@ -149,11 +146,5 @@ public class encrypt
 
         //returns the no spaces string
         return modifiedMessage;
-    }
-
-    //return caesar shifted string
-    public static String shiftEncrypt(String hillEncrypted)
-    {
-        return hillEncrypted;
     }
 }
