@@ -113,7 +113,7 @@ public class encrypt
         String encrypted="";
         for(int i=0;i<3;i++)
         {
-            encrypted = encrypted.concat((encryptedString[i])+" ");
+            encrypted = encrypted.concat(Character.toString((char)(encryptedString[i])));
         }
 
         return encrypted;
