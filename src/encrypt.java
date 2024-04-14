@@ -143,8 +143,6 @@ public class encrypt
             else
                 modifiedMessage = modifiedMessage.concat(Character.toString(message.charAt(i)));
         }
-
-        //returns the no spaces string
         return modifiedMessage;
     }
 }
